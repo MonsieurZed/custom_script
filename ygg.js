@@ -5,8 +5,8 @@
 // @description  Ajout d'améliorations pour le site YGG.
 // @author       Fervex
 // @supportURL   https://www3.yggtorrent.wtf/profile/7161-fervex
-// @updateURL    https://github.com/MonsieurZed/custom_script/blob/main/ygg.js
-// @downloadURL  https://github.com/MonsieurZed/custom_script/blob/main/ygg.js
+// @updateURL    https://raw.githubusercontent.com/MonsieurZed/custom_script/main/ygg.js
+// @downloadURL  https://raw.githubusercontent.com/MonsieurZed/custom_script/main/ygg.js
 // @icon         https://yggland.fr/assets/img/ygg32.png
 // @include      https://*.yggtorrent.*
 // @include      https://yggtorrent.*
