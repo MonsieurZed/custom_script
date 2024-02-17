@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YGGTools+
 // @namespace    YGGTools
-// @version      0.100
+// @version      0.101
 // @description  Ajout d'améliorations pour le site YGG.
 // @author       Fervex
 // @supportURL   https://www3.yggtorrent.qa/profile/7161-fervex
