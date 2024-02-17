@@ -28,9 +28,9 @@ ferveX(document).ready(function () {
   var styleBoutonS =
     "margin:15px 8px 0; display:inline-block; border-radius:25px; padding:8px 15px; text-transform:uppercase; background:#885599; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
   var styleBoutonA =
-    "margin:8px 4px 0; display:inline-block; border-radius:12px; padding:4px 8px; text-transform:uppercase; background:#228B22; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
+    "margin:15px 8px 0; display:inline-block; border-radius:25px; padding:8px 15px; text-transform:uppercase; background:#228B22; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
   var styleBoutonD =
-    "margin:8px 4px 0; display:inline-block; border-radius:12px; padding:4px 8px; text-transform:uppercase; background:#AA8B33; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
+    "margin:15px 8px 0; display:inline-block; border-radius:25px; padding:8px 15px; text-transform:uppercase; background:#AA8B33; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
   ferveX("head link[rel='stylesheet']")
     .last()
     .after(
