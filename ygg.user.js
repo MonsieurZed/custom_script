@@ -20,6 +20,7 @@ var ferveX = jQuery.noConflict(true);
 
 ferveX(document).ready(function () {
   var url = window.location.href;
+  var domain = "yggtorrent.qa";
 
   var styleBouton =
     "margin:15px 8px 0; display:inline-block; border-radius:25px; padding:8px 15px; text-transform:uppercase; background:#4e5c6f; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
@@ -372,7 +373,7 @@ ferveX(document).ready(function () {
       expires = "; expires=" + date.toUTCString();
     }
     document.cookie =
-      name + "=" + (value || "") + expires + ";domain=.yggtorrent.qa;path=/";
+      name + "=" + (value || "") + expires + ";domain=." + domain + ";path=/";
   }
   function getCookie(name) {
     var nameEQ = name + "=";
@@ -793,7 +794,7 @@ ferveX(document).ready(function () {
 
   ferveX(document).on("click", ".config-notifs-on", function (e) {
     setCookie("fervex_notifs", "on", 365);
-    ferveX('#top_panel a[href="https://www3.yggtorrent.qa/user/notifications"]')
+    ferveX('#top_panel a[href="https://www3."+ domain +"/user/notifications"]')
       .parent()
       .show();
     ferveX(".config-notifs-on")
@@ -806,7 +807,7 @@ ferveX(document).ready(function () {
   });
   ferveX(document).on("click", ".config-notifs-off", function (e) {
     setCookie("fervex_notifs", "off", 365);
-    ferveX('#top_panel a[href="https://www3.yggtorrent.qa/user/notifications"]')
+    ferveX('#top_panel a[href="https://www3."+ domain +"/user/notifications"]')
       .parent()
       .hide();
     ferveX(".config-notifs-off")
@@ -821,7 +822,7 @@ ferveX(document).ready(function () {
     if (ferveX(this).is(":checked")) {
       setCookie("fervex_notifs", "on", 365);
       ferveX(
-        '#top_panel a[href="https://www3.yggtorrent.qa/user/notifications"]'
+        '#top_panel a[href="https://www3."+ domain +"/user/notifications"]'
       )
         .parent()
         .show();
@@ -834,7 +835,7 @@ ferveX(document).ready(function () {
     } else {
       setCookie("fervex_notifs", "off", 365);
       ferveX(
-        '#top_panel a[href="https://www3.yggtorrent.qa/user/notifications"]'
+        '#top_panel a[href="https://www3."+ domain +"/user/notifications"]'
       )
         .parent()
         .hide();
@@ -906,7 +907,7 @@ ferveX(document).ready(function () {
     setCookie("fervex_preview", "off", 365);
     removePreview();
     ferveX(
-      "a[id^='torrent_name'], a[href^='https://www3.yggtorrent.qa/torrent/']"
+      "a[id^='torrent_name'], a[href^='https://www3." + domain + "/torrent/']"
     ).unbind("mouseenter mouseleave");
     ferveX(".config-preview-off")
       .removeClass("btn-primary")
@@ -1014,14 +1015,14 @@ ferveX(document).ready(function () {
         type: "hidden",
         value: "desc",
       })
-      .appendTo("form[action='https://www3.yggtorrent.qa/engine/search']");
+      .appendTo("form[action='https://www3." + domain + "/engine/search']");
     ferveX("<input>")
       .attr({
         name: "sort",
         type: "hidden",
         value: "publish_date",
       })
-      .appendTo("form[action='https://www3.yggtorrent.qa/engine/search']");
+      .appendTo("form[action='https://www3." + domain + "/engine/search']");
     ferveX(".config-recherche-date-desc").toggleClass(
       "btn-primary btn-success"
     );
@@ -1032,14 +1033,14 @@ ferveX(document).ready(function () {
         type: "hidden",
         value: "asc",
       })
-      .appendTo("form[action='https://www3.yggtorrent.qa/engine/search']");
+      .appendTo("form[action='https://www3." + domain + "/engine/search']");
     ferveX("<input>")
       .attr({
         name: "sort",
         type: "hidden",
         value: "publish_date",
       })
-      .appendTo("form[action='https://www3.yggtorrent.qa/engine/search']");
+      .appendTo("form[action='https://www3." + domain + "/engine/search']");
     ferveX(".config-recherche-date-asc").toggleClass("btn-primary btn-success");
   }
 
@@ -1060,7 +1061,7 @@ ferveX(document).ready(function () {
     var fervexNotifs = getCookie("fervex_notifs");
     if (fervexNotifs == "off") {
       ferveX(
-        '#top_panel a[href="https://www3.yggtorrent.qa/user/notifications"]'
+        '#top_panel a[href="https://www3."+ domain +"/user/notifications"]'
       )
         .parent()
         .hide();
@@ -1154,7 +1155,7 @@ ferveX(document).ready(function () {
     var delai;
 
     ferveX(
-      "a[id^='torrent_name'], a[href^='https://www3.yggtorrent.qa/torrent/']"
+      "a[id^='torrent_name'], a[href^='https://www3." + domain + "/torrent/']"
     )
       .on("mouseenter", function (e) {
         ferveX("#preview").remove();
@@ -1236,7 +1237,7 @@ ferveX(document).ready(function () {
       });
 
     ferveX(
-      "a[id^='torrent_name'], a[href^='https://www3.yggtorrent.qa/torrent/']"
+      "a[id^='torrent_name'], a[href^='https://www3." + domain + "/torrent/']"
     ).on("mousemove", function (e) {
       var mouseY = e.pageY - ferveX(window).scrollTop(); // Coordonnée Y du curseur par rapport à la fenêtre visible
 
@@ -1260,7 +1261,7 @@ ferveX(document).ready(function () {
     });
 
     ferveX(
-      "a[id^='torrent_name'], a[href^='https://www3.yggtorrent.qa/torrent/']"
+      "a[id^='torrent_name'], a[href^='https://www3." + domain + "/torrent/']"
     ).on("mouseout", function (e) {
       ferveX("#preview").remove();
     });
@@ -1279,7 +1280,7 @@ ferveX(document).ready(function () {
   });
   function removePreview() {
     ferveX(
-      "a[id^='torrent_name'], a[href^='https://www3.yggtorrent.qa/torrent/']"
+      "a[id^='torrent_name'], a[href^='https://www3." + domain + "/torrent/']"
     )
       .off("mouseenter")
       .off("mouseleave");
@@ -1288,7 +1289,7 @@ ferveX(document).ready(function () {
   function getPreview() {
     if (url.indexOf("/forum/") == -1) {
       ferveX(
-        "a[id^='torrent_name'], a[href^='https://www3.yggtorrent.qa/torrent/']"
+        "a[id^='torrent_name'], a[href^='https://www3." + domain + "/torrent/']"
       )
         .not(".image-preview")
         .each(function () {
@@ -1359,7 +1360,9 @@ ferveX(document).ready(function () {
       }
       ferveX(".fervexTools a").attr(
         "href",
-        "https://www3.yggtorrent.qa/engine/search?name=" +
+        "https://www3." +
+          domain +
+          "/engine/search?name=" +
           texteSelection +
           "&do=search"
       );
@@ -1800,7 +1803,9 @@ ferveX(document).ready(function () {
           userDownOctet,
           userDelta;
         var urlSearch =
-          "https://www3.yggtorrent.qa/engine/search_users?nickname=" +
+          "https://www3." +
+          domain +
+          "/engine/search_users?nickname=" +
           encodeURIComponent(userPseudo);
 
         // Requête pour charger le contenu HTML de la recherche user
@@ -1892,7 +1897,9 @@ ferveX(document).ready(function () {
             var userPseudo = match[1];
             var userProfil;
             var urlSearch =
-              "https://www3.yggtorrent.qa/engine/search_users?nickname=" +
+              "https://www3." +
+              domain +
+              "/engine/search_users?nickname=" +
               encodeURIComponent(userPseudo);
 
             fetch(urlSearch)
@@ -1935,7 +1942,9 @@ ferveX(document).ready(function () {
         var userPseudo = ferveX(".memberHeader-name .username").text().trim();
         var userProfil;
         var urlSearch =
-          "https://www3.yggtorrent.qa/engine/search_users?nickname=" +
+          "https://www3." +
+          domain +
+          "/engine/search_users?nickname=" +
           encodeURIComponent(userPseudo);
 
         fetch(urlSearch)
@@ -2813,7 +2822,7 @@ ferveX(document).ready(function () {
         }
 
         async function getTableData(pageNumber) {
-          let url = `https://www3.yggtorrent.qa/user/my_torrents?page=${
+          let url = `https://www3."+ domain +"/user/my_torrents?page=${
             pageNumber * 50
           }`;
           let response = await ferveX.ajax({ url });
@@ -2924,7 +2933,7 @@ ferveX(document).ready(function () {
               );
               if (conf) {
                 var t_id = $(this).closest("tr").attr("torrent-id");
-                $.post("https://www3.yggtorrent.qa/user/remove_torrent", {
+                $.post("https://www3." + domain + "/user/remove_torrent", {
                   id: t_id,
                 })
                   .done(function (id) {
