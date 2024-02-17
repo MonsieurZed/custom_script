@@ -22,20 +22,20 @@ ferveX(document).ready(function () {
   var url = window.location.href;
 
   var styleBouton =
-    "margin:8px 4px 0; display:inline-block; border-radius:12px; padding:4px 8px; text-transform:uppercase; background:#4e5c6f; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
+    "margin:15px 8px 0; display:inline-block; border-radius:25px; padding:8px 15px; text-transform:uppercase; background:#4e5c6f; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
   var styleBoutonF =
-    "margin:8px 4px 0; display:inline-block; border-radius:12px; padding:4px 8px; text-transform:uppercase; background:#267bbb; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
+    "margin:15px 8px 0; display:inline-block; border-radius:25px; padding:8px 15px; text-transform:uppercase; background:#267bbb; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
   var styleBoutonS =
-    "margin:8px 4px 0; display:inline-block; border-radius:12px; padding:4px 8px; text-transform:uppercase; background:#885599; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
+    "margin:15px 8px 0; display:inline-block; border-radius:25px; padding:8px 15px; text-transform:uppercase; background:#885599; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
   var styleBoutonA =
-    "margin:8px 4px 0; display:inline-block; border-radius:12px; padding:4px 8px; text-transform:uppercase; background:#228B22; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
+    "margin:15px 8px 0; display:inline-block; border-radius:12px; padding:4px 8px; text-transform:uppercase; background:#228B22; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
   var styleBoutonD =
-    "margin:8px 4px 0; display:inline-block; border-radius:12px; padding:4px 8px; text-transform:uppercase; background:#AA8B33; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
+    "margin:15px 8px 0; display:inline-block; border-radius:12px; padding:4px 8px; text-transform:uppercase; background:#AA8B33; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
 
   ferveX("head link[rel='stylesheet']")
     .last()
     .after(
-      '<style type="text/css">.promo-container{display:none!important}body #middle .search-criteria td button.solo{width:180px!important}.w65{width:65px}.f16{font-size:16px;vertical-align:text-top;}.butonFervexHover{background:#22282f!important;color:#fff!important;text-decoration:none!important}.focus-wrap-nav .p-navEl-link[data-nav-id=moncompte]:before{content:"\\f007"}.focus-wrap-nav .p-navEl-link[data-nav-id=messagerie]:before{content:"\\f0e0"}.focus-wrap-nav .p-navEl-link[data-nav-id=uploadtorrent]:before{content:"\\f093"}.focus-wrap-nav .p-navEl-link[data-nav-id=chercheCopain]:before{content:"\\f002"}.fervexTools{box-shadow:0px 0px 4px rgba(0,0,0,.5)!important;border:solid 1px #777;z-index:999999;background:#dff0d8;}.fervexTools:hover{box-shadow:0px 3px 10px rgba(0,0,0,.6)!important}.fervexTools1{position:fixed;padding:2px 3px;border-radius:4px;font-size:12px}.fervexTools2{position:absolute;padding:4px 3px 4px 5px;border-radius:50%;width:25px;height:25px;line-height:1.15}.fervexTime{position:absolute;top:35px;width:100%;text-align:center;color:#eee;}.fervexTime .badge{font-size:100%}.fervexTime .badge span{color:#6cded4}#fervextip{position:fixed;z-index:1070;display:inline-block;font-size:.875rem;text-transform:none;font-weight:400;font-style:normal;}#fervextip .tipBody{display:inline-block;max-width:200px;padding:3px 8px;color:#fff;text-align:center;background-color:#000;border-radius:.25rem;}.config-recherche-bas,.config-recherche-popup,.config-recherche-date-desc,.config-recherche-date-asc,.config-sidebar-on,.config-sidebar-off,.config-preview-on,.config-preview-off,.config-preview2-on,.config-preview2-off{padding:4px 6px;font-size:0.875em;text-transform:inherit;font-weight:400;font-family:inherit}#nfoModal .modal-body pre{white-space: pre-wrap}.results .dataTables_info {display: inherit!important}.m-2{margin:0.5rem}.ico_spin {animation: spin-animation 1s infinite;animation-timing-function: linear;}@keyframes spin-animation {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}#middle .content table.notif td{padding:6px 10px!important;font-size:12px;}#middle table.notif tbody td .btn{margin-top:0;}#middle table.notif td:first-child {width:130px}</style>'
+      '<style type="text/css">#top_panel{z-index: 1000}.promo-container{display:none!important}body #middle .search-criteria td button.solo{width:180px!important}.w65{width:65px}.f16{font-size:16px;vertical-align:text-top;}.butonFervexHover{background:#22282f!important;color:#fff!important;text-decoration:none!important}.focus-wrap-nav .p-navEl-link[data-nav-id=moncompte]:before{content:"\\f007"}.focus-wrap-nav .p-navEl-link[data-nav-id=messagerie]:before{content:"\\f0e0"}.focus-wrap-nav .p-navEl-link[data-nav-id=uploadtorrent]:before{content:"\\f093"}.focus-wrap-nav .p-navEl-link[data-nav-id=chercheCopain]:before{content:"\\f002"}.focus-wrap-nav .p-navEl-link[data-nav-id=voirfavoris]:before{content:"\\f02e"}.fervexTools{box-shadow:0px 0px 4px rgba(0,0,0,.5)!important;border:solid 1px #777;z-index:999999;background:#dff0d8;}.fervexTools:hover{box-shadow:0px 3px 10px rgba(0,0,0,.6)!important}.fervexTools1{position:fixed;padding:2px 3px;border-radius:4px;font-size:12px}.fervexTools2{position:absolute;padding:4px 3px 4px 5px;border-radius:50%;width:25px;height:25px;line-height:1.15}.fervexTime{position:absolute;top:35px;width:100%;text-align:center;color:#eee;}.fervexTime .badge{font-size:100%}.fervexTime .badge span{color:#6cded4}#fervextip{position:fixed;z-index:1070;display:inline-block;font-size:.875rem;text-transform:none;font-weight:400;font-style:normal;}#fervextip .tipBody{display:inline-block;max-width:200px;padding:3px 8px;color:#fff;text-align:center;background-color:#000;border-radius:.25rem;}.config-recherche-bas,.config-recherche-popup,.config-recherche-date-desc,.config-recherche-date-asc,.config-sidebar-on,.config-sidebar-off,.config-notifs-on,.config-notifs-off,.config-notifs-total-on,.config-notifs-total-off,.config-preview-on,.config-preview-off,.config-preview2-on,.config-preview2-off{padding:4px 6px;font-size:0.875em;text-transform:inherit;font-weight:400;font-family:inherit}#nfoModal .modal-body pre{white-space: pre-wrap}.results .dataTables_info {display: inherit!important}.m-2{margin:0.5rem}.ico_spin {animation: spin-animation 1s infinite;animation-timing-function: linear;}@keyframes spin-animation {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}#middle .content table.notif td{padding:6px 10px!important;font-size:12px;}#middle table.notif tbody td .btn{margin-top:0;}#middle table.notif td:first-child {width:130px}.block-outer-main+.block-outer-main {margin-left:15px;}</style>'
     );
   ferveX("body").prepend(
     '<div class="fervexTools fervexTools1" style="display:none"><a href="#" style="text-decoration:none" title="Recherche torrent sur YGG" target="_blank">Recherche</a></ul>'
@@ -372,7 +372,7 @@ ferveX(document).ready(function () {
       expires = "; expires=" + date.toUTCString();
     }
     document.cookie =
-      name + "=" + (value || "") + expires + ";domain=.yggtorrent.wtf;path=/";
+      name + "=" + (value || "") + expires + ";domain=.yggtorrent.qa;path=/";
   }
   function getCookie(name) {
     var nameEQ = name + "=";
@@ -456,45 +456,62 @@ ferveX(document).ready(function () {
     iconeRecherche = "fa fa-search";
   }
 
-  sidebar = getCookie("fervex_sidebar") == "on" ? " checked" : "";
-  preview = getCookie("fervex_preview") == "on" ? " checked" : "";
-  preview_delai =
+  const sidebar = getCookie("fervex_sidebar") == "on" ? " checked" : "";
+  const notifs = getCookie("fervex_notifs") == "off" ? "" : " checked";
+  const notifs_total =
+    getCookie("fervex_notifs_total") == "off" ? "" : " checked";
+  const preview = getCookie("fervex_preview") == "on" ? " checked" : "";
+  const preview_delai =
     getCookie("fervex_preview_delai") !== null
       ? getCookie("fervex_preview_delai")
       : 400;
-  preview_height =
+  const preview_height =
     getCookie("fervex_preview_height") !== null
       ? getCookie("fervex_preview_height")
       : 300;
-  preview2 = getCookie("fervex_preview2") == "on" ? " checked" : "";
+  const preview2 = getCookie("fervex_preview2") == "on" ? " checked" : "";
   ferveX("body").prepend(
-    '<div id="fervexConf" style="display:none;position:fixed;right:10px;top:10px;background:#21242b;z-index:999999;border:1px solid #777;color:#ddd;text-align:center;font-size: 13px;">' +
+    '<div id="fervexConf" style="display:none;position:fixed;right:10px;top:10px;background:#21242b;z-index:999999;border:1px solid #777;color:#ddd;text-align:center;font-size: 13px; max-height:90vh;  overflow-x:auto;">' +
       '    <div style="border-bottom:1px solid #777; padding:8px; background:#222; cursor:move" id="fervexConfMenu">' +
       "        <b>YGGTools</b>" +
       "    </div>" +
       '    <div style="border-bottom:1px solid #777; padding:10px 10px 12px">' +
-      '        <p style="margin-bottom:7px">Recherche sur sélection</p>' +
+      '        <p style="margin: 0 0 7px">Recherche sur sélection</p>' +
       '        <p style="margin-bottom:0">' +
       '            <button type="button" class="btn btn-sm btn-primary config-recherche-bas">Bas de l\'écran</button> ' +
       '            <button type="button" class="btn btn-sm btn-primary config-recherche-popup">Popup</button>' +
       "        </p>" +
       "    </div>" +
       '    <div style="border-bottom:1px solid #777; padding:10px 10px 12px">' +
-      '        <p style="margin-bottom:7px">Recherche par défaut</p>' +
+      '        <p style="margin: 0 0 7px">Recherche par défaut</p>' +
       '        <p style="margin-bottom:0">' +
       '            <button type="button" class="btn btn-sm btn-primary config-recherche-date-desc">Plus récent</button> ' +
       '            <button type="button" class="btn btn-sm btn-primary config-recherche-date-asc">Plus ancien</button>' +
       "        </p>" +
       "    </div>" +
       '    <div style="border-bottom:1px solid #777; padding:10px 10px 12px">' +
-      '        <p style="margin-bottom:7px">Afficher sidebar ?</p>' +
+      '        <p style="margin: 0 0 7px">Afficher la sidebar ?</p>' +
       '        <p style="margin-bottom:0">' +
       '            <button type="button" class="btn btn-sm btn-primary config-sidebar-on">Oui</button> ' +
       '            <button type="button" class="btn btn-sm btn-primary config-sidebar-off">Non</button>' +
       "        </p>" +
       "    </div>" +
       '    <div style="border-bottom:1px solid #777; padding:10px 10px 12px">' +
-      '        <p style="margin-bottom:7px">Afficher preview (survol) ?</p>' +
+      '        <p style="margin: 0 0 7px">Afficher lien "notifications" si 0 notif ?</p>' +
+      '        <p style="margin-bottom:0">' +
+      '            <button type="button" class="btn btn-sm btn-primary config-notifs-on">Oui</button> ' +
+      '            <button type="button" class="btn btn-sm btn-primary config-notifs-off">Non</button>' +
+      "        </p>" +
+      "    </div>" +
+      '    <div style="border-bottom:1px solid #777; padding:10px 10px 12px">' +
+      '        <p style="margin: 0 0 7px">Afficher compteur notifs total ?</p>' +
+      '        <p style="margin-bottom:0">' +
+      '            <button type="button" class="btn btn-sm btn-primary config-notifs-total-on">Oui</button> ' +
+      '            <button type="button" class="btn btn-sm btn-primary config-notifs-total-off">Non</button>' +
+      "        </p>" +
+      "    </div>" +
+      '    <div style="border-bottom:1px solid #777; padding:10px 10px 12px">' +
+      '        <p style="margin: 0 0 7px">Afficher preview (survol) ?</p>' +
       '        <p style="margin-bottom:10px">' +
       '            <button type="button" class="btn btn-sm btn-primary config-preview-on">Oui</button> ' +
       '            <button type="button" class="btn btn-sm btn-primary config-preview-off">Non</button>' +
@@ -517,7 +534,7 @@ ferveX(document).ready(function () {
       "        </p>" +
       "    </div>" +
       '    <div style="border-bottom:1px solid #777; padding:10px 10px 12px">' +
-      '        <p style="margin-bottom:7px">Afficher preview (fixe) ?<br><em style="color:#ccc;font-size:12px">[expérimental]</em></p>' +
+      '        <p style="margin: 0 0 7px">Afficher preview (fixe) ?<br><em style="color:#ccc;font-size:11px">[expérimental]</em></p>' +
       '        <p style="margin-bottom:0">' +
       '            <button type="button" class="btn btn-sm btn-primary config-preview2-on">Oui</button> ' +
       '            <button type="button" class="btn btn-sm btn-primary config-preview2-off">Non</button>' +
@@ -536,14 +553,14 @@ ferveX(document).ready(function () {
       '				<a type="button" class="my-1 mr-1 btn btn-sm btn-primary config-recherche-bas">Bas de l\'écran</a>' +
       '				<a type="button" class="my-1 btn btn-sm btn-primary config-recherche-popup">En popup</a>' +
       "			</td>" +
-      "			<td><strong>Recherche sur sélection de texte</strong></td>" +
+      "			<td><strong>Recherche sur sélection de texte</strong> <small>&nbsp; (Affiche un bouton en bas décran ou en popup pour lancer une recherche torrent du texte sélectionné)</small></td>" +
       "		<tr>" +
       "		<tr>" +
       "			<td>" +
       '				<a type="button" class="my-1 mr-1 btn btn-sm btn-primary config-recherche-date-desc">Plus récent</a>' +
       '				<a type="button" class="my-1 btn btn-sm btn-primary config-recherche-date-asc">Plus ancien</a>' +
       "			</td>" +
-      "			<td><strong>Tri du moteur de recherche par défaut</strong></td>" +
+      "			<td><strong>Tri du moteur de recherche par défaut</strong> <small>&nbsp; (Affiche les torrents plus récents/anciens en premier)</small></td>" +
       "		<tr>" +
       "		<tr>" +
       "			<td>" +
@@ -554,7 +571,29 @@ ferveX(document).ready(function () {
       '					<div class="state"><label></label></div>' +
       "				</div>" +
       "			</td>" +
-      "			<td><strong>Afficher la barre latérale (sidebar)</strong></td>" +
+      "			<td><strong>Afficher la sidebar</strong> <small>&nbsp; (Afficher la barre latérale de gauche contenant les catégories des torrents)</small></td>" +
+      "		<tr>" +
+      "		<tr>" +
+      "			<td>" +
+      '				<div class="pretty p-default">' +
+      '					<input type="checkbox" id="config_notifs"' +
+      notifs +
+      ">" +
+      '					<div class="state"><label></label></div>' +
+      "				</div>" +
+      "			</td>" +
+      '			<td><strong>Afficher le lien "notifications" si 0 notif</strong> <small>&nbsp; (Afficher le lien "notifications" dans le menu en haut de page même si aucun notif reçue)</small></td>' +
+      "		<tr>" +
+      "		<tr>" +
+      "			<td>" +
+      '				<div class="pretty p-default">' +
+      '					<input type="checkbox" id="config_notifs_total"' +
+      notifs_total +
+      ">" +
+      '					<div class="state"><label></label></div>' +
+      "				</div>" +
+      "			</td>" +
+      "			<td><strong>Afficher le compteur de notifs total</strong> <small>&nbsp; (Afficher la bulle verte dans le menu en haut de page)</small></td>" +
       "		<tr>" +
       "		<tr>" +
       "			<td>" +
@@ -752,6 +791,106 @@ ferveX(document).ready(function () {
     }
   });
 
+  ferveX(document).on("click", ".config-notifs-on", function (e) {
+    setCookie("fervex_notifs", "on", 365);
+    ferveX('#top_panel a[href="https://www3.yggtorrent.qa/user/notifications"]')
+      .parent()
+      .show();
+    ferveX(".config-notifs-on")
+      .removeClass("btn-primary")
+      .addClass("btn-success");
+    ferveX(".config-notifs-off")
+      .removeClass("btn-success")
+      .addClass("btn-primary");
+    ferveX("#config_notifs").prop("checked", true);
+  });
+  ferveX(document).on("click", ".config-notifs-off", function (e) {
+    setCookie("fervex_notifs", "off", 365);
+    ferveX('#top_panel a[href="https://www3.yggtorrent.qa/user/notifications"]')
+      .parent()
+      .hide();
+    ferveX(".config-notifs-off")
+      .removeClass("btn-primary")
+      .addClass("btn-success");
+    ferveX(".config-notifs-on")
+      .removeClass("btn-success")
+      .addClass("btn-primary");
+    ferveX("#config_notifs").prop("checked", false);
+  });
+  ferveX(document).on("change", "#config_notifs", function () {
+    if (ferveX(this).is(":checked")) {
+      setCookie("fervex_notifs", "on", 365);
+      ferveX(
+        '#top_panel a[href="https://www3.yggtorrent.qa/user/notifications"]'
+      )
+        .parent()
+        .show();
+      ferveX(".config-notifs-on")
+        .removeClass("btn-primary")
+        .addClass("btn-success");
+      ferveX(".config-notifs-off")
+        .removeClass("btn-success")
+        .addClass("btn-primary");
+    } else {
+      setCookie("fervex_notifs", "off", 365);
+      ferveX(
+        '#top_panel a[href="https://www3.yggtorrent.qa/user/notifications"]'
+      )
+        .parent()
+        .hide();
+      ferveX(".config-notifs-off")
+        .removeClass("btn-primary")
+        .addClass("btn-success");
+      ferveX(".config-notifs-on")
+        .removeClass("btn-success")
+        .addClass("btn-primary");
+    }
+  });
+
+  ferveX(document).on("click", ".config-notifs-total-on", function (e) {
+    setCookie("fervex_notifs_total", "on", 365);
+    ferveX(".bulle+.bulle").show();
+    ferveX(".config-notifs-total-on")
+      .removeClass("btn-primary")
+      .addClass("btn-success");
+    ferveX(".config-notifs-total-off")
+      .removeClass("btn-success")
+      .addClass("btn-primary");
+    ferveX("#config_notifs_total").prop("checked", true);
+  });
+  ferveX(document).on("click", ".config-notifs-total-off", function (e) {
+    setCookie("fervex_notifs_total", "off", 365);
+    ferveX(".bulle+.bulle").hide();
+    ferveX(".config-notifs-total-off")
+      .removeClass("btn-primary")
+      .addClass("btn-success");
+    ferveX(".config-notifs-total-on")
+      .removeClass("btn-success")
+      .addClass("btn-primary");
+    ferveX("#config_notifs_total").prop("checked", false);
+  });
+  ferveX(document).on("change", "#config_notifs_total", function () {
+    if (ferveX(this).is(":checked")) {
+      setCookie("fervex_notifs_total", "on", 365);
+      ferveX(".bulle+.bulle").show();
+      ferveX(".config-notifs-total-on")
+        .removeClass("btn-primary")
+        .addClass("btn-success");
+      ferveX(".config-notifs-total-off")
+        .removeClass("btn-success")
+        .addClass("btn-primary");
+    } else {
+      setCookie("fervex_notifs_total", "off", 365);
+      ferveX(".bulle+.bulle").hide();
+      ferveX(".config-notifs-total-off")
+        .removeClass("btn-primary")
+        .addClass("btn-success");
+      ferveX(".config-notifs-total-on")
+        .removeClass("btn-success")
+        .addClass("btn-primary");
+    }
+  });
+
   ferveX(document).on("click", ".config-preview-on", function (e) {
     setCookie("fervex_preview", "on", 365);
     addPreview();
@@ -767,7 +906,7 @@ ferveX(document).ready(function () {
     setCookie("fervex_preview", "off", 365);
     removePreview();
     ferveX(
-      "a[id^='torrent_name'], a[href^='https://www3.yggtorrent.wtf/torrent/']"
+      "a[id^='torrent_name'], a[href^='https://www3.yggtorrent.qa/torrent/']"
     ).unbind("mouseenter mouseleave");
     ferveX(".config-preview-off")
       .removeClass("btn-primary")
@@ -875,14 +1014,14 @@ ferveX(document).ready(function () {
         type: "hidden",
         value: "desc",
       })
-      .appendTo("form[action='https://www3.yggtorrent.wtf/engine/search']");
+      .appendTo("form[action='https://www3.yggtorrent.qa/engine/search']");
     ferveX("<input>")
       .attr({
         name: "sort",
         type: "hidden",
         value: "publish_date",
       })
-      .appendTo("form[action='https://www3.yggtorrent.wtf/engine/search']");
+      .appendTo("form[action='https://www3.yggtorrent.qa/engine/search']");
     ferveX(".config-recherche-date-desc").toggleClass(
       "btn-primary btn-success"
     );
@@ -893,14 +1032,14 @@ ferveX(document).ready(function () {
         type: "hidden",
         value: "asc",
       })
-      .appendTo("form[action='https://www3.yggtorrent.wtf/engine/search']");
+      .appendTo("form[action='https://www3.yggtorrent.qa/engine/search']");
     ferveX("<input>")
       .attr({
         name: "sort",
         type: "hidden",
         value: "publish_date",
       })
-      .appendTo("form[action='https://www3.yggtorrent.wtf/engine/search']");
+      .appendTo("form[action='https://www3.yggtorrent.qa/engine/search']");
     ferveX(".config-recherche-date-asc").toggleClass("btn-primary btn-success");
   }
 
@@ -912,6 +1051,36 @@ ferveX(document).ready(function () {
   } else {
     ferveX(".config-sidebar-off").toggleClass("btn-primary btn-success");
     ferveX("#config_sidebar").prop("checked", false);
+  }
+
+  /* notifs reçues */
+  var fervexNotifsNb = ferveX(".bulle:first-child").text();
+  if (fervexNotifsNb == 0) {
+    ferveX(".bulle:first-child").hide();
+    var fervexNotifs = getCookie("fervex_notifs");
+    if (fervexNotifs == "off") {
+      ferveX(
+        '#top_panel a[href="https://www3.yggtorrent.qa/user/notifications"]'
+      )
+        .parent()
+        .hide();
+      ferveX(".config-notifs-off").toggleClass("btn-primary btn-success");
+      ferveX("#config_notifs").prop("checked", false);
+    } else {
+      ferveX(".config-notifs-on").toggleClass("btn-primary btn-success");
+      ferveX("#config_notifs").prop("checked", true);
+    }
+  }
+
+  /* notifs total */
+  var fervexNotifsTotal = getCookie("fervex_notifs_total");
+  if (fervexNotifsTotal == "off") {
+    ferveX(".bulle+.bulle").hide();
+    ferveX(".config-notifs-total-off").toggleClass("btn-primary btn-success");
+    ferveX("#config_notifs_total").prop("checked", false);
+  } else {
+    ferveX(".config-notifs-total-on").toggleClass("btn-primary btn-success");
+    ferveX("#config_notifs_total").prop("checked", true);
   }
 
   /* preview des images torrents au survol */
@@ -985,7 +1154,7 @@ ferveX(document).ready(function () {
     var delai;
 
     ferveX(
-      "a[id^='torrent_name'], a[href^='https://www3.yggtorrent.wtf/torrent/']"
+      "a[id^='torrent_name'], a[href^='https://www3.yggtorrent.qa/torrent/']"
     )
       .on("mouseenter", function (e) {
         ferveX("#preview").remove();
@@ -1067,7 +1236,7 @@ ferveX(document).ready(function () {
       });
 
     ferveX(
-      "a[id^='torrent_name'], a[href^='https://www3.yggtorrent.wtf/torrent/']"
+      "a[id^='torrent_name'], a[href^='https://www3.yggtorrent.qa/torrent/']"
     ).on("mousemove", function (e) {
       var mouseY = e.pageY - ferveX(window).scrollTop(); // Coordonnée Y du curseur par rapport à la fenêtre visible
 
@@ -1091,7 +1260,7 @@ ferveX(document).ready(function () {
     });
 
     ferveX(
-      "a[id^='torrent_name'], a[href^='https://www3.yggtorrent.wtf/torrent/']"
+      "a[id^='torrent_name'], a[href^='https://www3.yggtorrent.qa/torrent/']"
     ).on("mouseout", function (e) {
       ferveX("#preview").remove();
     });
@@ -1110,7 +1279,7 @@ ferveX(document).ready(function () {
   });
   function removePreview() {
     ferveX(
-      "a[id^='torrent_name'], a[href^='https://www3.yggtorrent.wtf/torrent/']"
+      "a[id^='torrent_name'], a[href^='https://www3.yggtorrent.qa/torrent/']"
     )
       .off("mouseenter")
       .off("mouseleave");
@@ -1119,7 +1288,7 @@ ferveX(document).ready(function () {
   function getPreview() {
     if (url.indexOf("/forum/") == -1) {
       ferveX(
-        "a[id^='torrent_name'], a[href^='https://www3.yggtorrent.wtf/torrent/']"
+        "a[id^='torrent_name'], a[href^='https://www3.yggtorrent.qa/torrent/']"
       )
         .not(".image-preview")
         .each(function () {
@@ -1190,7 +1359,7 @@ ferveX(document).ready(function () {
       }
       ferveX(".fervexTools a").attr(
         "href",
-        "https://www3.yggtorrent.wtf/engine/search?name=" +
+        "https://www3.yggtorrent.qa/engine/search?name=" +
           texteSelection +
           "&do=search"
       );
@@ -1259,13 +1428,148 @@ ferveX(document).ready(function () {
         .after(
           '<li><div class="p-navEl"><a href="/engine/search_users?nickname=" class="p-navEl-link" data-nav-id="chercheCopain" id="chercheCopain" title="Recherche un utilisateur sur YGG"></a></div></li>'
         );
+      ferveX(".p-nav .focus-wrap-nav ul.p-nav-list li")
+        .last()
+        .after(
+          '<li><div class="p-navEl"><a href="" class="p-navEl-link" data-nav-id="voirfavoris" id="voirfavoris" title="Afficher ses favoris enregistrés"></a></div></li>'
+        );
       ferveX("body").prepend(
         '<div class="fervexTime d-flex align-items-center justify-content-center"><span class="badge">FR : <span id="hfr"></span> ↔ QC : <span id="hqc"></span></span></div>'
       );
 
+      ferveX(".block-outer-opposite")
+        .first()
+        .before(
+          '<div class="block-outer-main"><a href="" class="button--link button ajout-favoris" title="Ajouter aux Favoris"><i class="fa fa-bookmark"></i> En Favoris</a></div>'
+        );
+
+      /* Favoris */
+      ferveX(".ajout-favoris").click(function (e) {
+        e.preventDefault();
+        const that = ferveX(this);
+        const currentDate = new Date();
+        const temps = currentDate.getTime();
+        const favTitre = ferveX("h1.p-title-value").text();
+        const favUrl = ferveX(location).attr("href");
+        localStorage.setItem("FAV_" + temps + "_titre", favTitre);
+        localStorage.setItem("FAV_" + temps + "_lien", favUrl);
+        that.text("Ajouté !");
+        setTimeout(function () {
+          that.remove();
+        }, 800);
+      });
+
+      ferveX("#voirfavoris").click(function (e) {
+        e.preventDefault();
+        if (!ferveX(".fervexpop-styles").length) {
+          const modalStyles = `
+					<style class="fervexpop-styles">
+						.fervexpop-overlay {
+							display: none;
+							position: fixed;
+							z-index: 1000;
+							left: 0;
+							top: 0;
+							width: 100%;
+							height: 100%;
+							background-color: rgba(0, 0, 0, 0.5);
+						}
+						.fervexpop {
+							position: fixed;
+							top: -100%;
+							left: 50%;
+							transform: translate(-50%, 0);
+							color: #aaa;
+							background-color: #22282f;
+							width: 100%;
+							max-width: 680px;
+							box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+						}
+						.fervexpop a {
+							color: #aaa;
+						}
+						.fervexpop-content {
+							padding: 20px;
+						}
+						.fervexpop-content .fa{
+							color: #e74c3c;
+						}
+						.fervexpop-close {
+							float: right;
+							font-size: 28px;
+							font-weight: bold;
+							cursor: pointer;
+						}
+						.fervexpop-close:hover {
+							color: #FFF;
+						}
+					</style>
+					`;
+
+          ferveX("head").append(modalStyles);
+        }
+
+        const favListe = [];
+        for (const key in localStorage) {
+          if (key.startsWith("FAV_") && key.endsWith("_titre")) {
+            const titre = localStorage[key];
+            const lienKey = key.replace("_titre", "_lien");
+            const lien = localStorage[lienKey];
+
+            if (lien) {
+              favListe.push(`
+								<li>
+									<a href="${lien}">${titre}</a> 
+									&nbsp; <a href="#" class="del-favoris" data-titre-key="${key}" data-lien-key="${lienKey}"><i class="fa fa-trash"></i></a>
+								</li>
+							`);
+            }
+          }
+        }
+
+        const modalContent = `
+					<div class="fervexpop-overlay">
+						<div class="fervexpop">
+							<div class="fervexpop-content">
+								<span class="fervexpop-close">&times;</span>
+								<h2>Mes Favoris</h2>
+								<ul>${favListe.join("")}</ul>
+							</div>
+						</div>
+					</div>
+				`;
+
+        ferveX("body").append(modalContent);
+        ferveX(".fervexpop-overlay").fadeIn(300, function () {
+          ferveX(".fervexpop").animate({ top: "20%" }, 300);
+        });
+
+        if (favListe.length === 0) {
+          ferveX(".fervexpop ul").html("Pas de favoris");
+        }
+
+        ferveX(".del-favoris").click(function (event) {
+          event.preventDefault();
+          localStorage.removeItem(ferveX(this).data("titre-key"));
+          localStorage.removeItem(ferveX(this).data("lien-key"));
+
+          ferveX(this).parent().remove();
+
+          if (ferveX(".fervexpop ul").children().length === 0) {
+            ferveX(".fervexpop ul").html("Plus de favoris");
+          }
+        });
+
+        ferveX(".fervexpop-close").click(function () {
+          ferveX(".fervexpop-overlay").fadeOut(300, function () {
+            ferveX(this).remove();
+          });
+        });
+      });
+
       /* Horloge */
-      horloge("hfr", 2);
-      horloge("hqc", -4);
+      horloge("hfr", 1);
+      horloge("hqc", -5);
       function horloge(el, offset = 0) {
         if (typeof el == "string") {
           el = document.getElementById(el);
@@ -1309,6 +1613,112 @@ ferveX(document).ready(function () {
               s +
               '&do=search" target="blank"></a>'
           )[0].click();
+        }
+      });
+
+      // Mes demandes d'upload
+      var demandesUpload = ferveX("<button>", {
+        id: "demandesUpload",
+        class: "button button--icon button--icon--search",
+        text: "",
+      });
+      var demandesUploadContent =
+        "<span class='button-text'>Demandes d'upload où j'ai réagi</span>";
+      var username = ferveX(".avatar")
+        .next(".p-navgroup-linkText")
+        .first()
+        .text();
+      demandesUpload.on("click", function () {
+        ferveX.get("/forum/index.php?search/&type=post", function (pageSource) {
+          var xfTokenElement = ferveX('input[name="_xfToken"]', pageSource);
+
+          if (xfTokenElement.length > 0) {
+            var xfTokenValue = xfTokenElement.val();
+
+            var form = ferveX("<form>", {
+              action: "/forum/index.php?search/search",
+              method: "POST",
+            });
+
+            form.append(
+              '<input type="hidden" name="c[users]" value="' + username + '">'
+            );
+            form.append('<input type="hidden" name="c[nodes][]" value="123">');
+            form.append(
+              '<input type="hidden" name="c[child_nodes]" value="1">'
+            );
+            form.append(
+              '<input type="hidden" name="search_type" value="post">'
+            );
+            form.append('<input type="hidden" name="grouped" value="1">');
+            form.append(
+              '<input type="hidden" name="_xfToken" value="' +
+                xfTokenValue +
+                '">'
+            );
+
+            ferveX("body").append(form);
+
+            form.submit();
+          }
+        });
+      });
+
+      ferveX(".p-title-pageAction").append(demandesUpload);
+      ferveX("#demandesUpload").append(demandesUploadContent);
+
+      // ajout d'un filtre pour nos créations de post uniquement
+      if (url.indexOf("/index.php?search/") > -1) {
+        var demandesUploadUser = ferveX("<button>", {
+          id: "demandesUploadUser",
+          class: "button button--icon button--icon--search",
+          text: "",
+        });
+      }
+      var demandesUploadUserContent =
+        "<span class='button-text'>Filtrer uniquement mes demandes</span>";
+      ferveX(".p-body-header .p-title").append(demandesUploadUser);
+      ferveX("#demandesUploadUser").append(demandesUploadUserContent);
+
+      function getLastPageNumberdemandesUpload() {
+        var lastPageLink = ferveX(".pageNav-main li.pageNav-page:last-child a");
+        return lastPageLink.length ? parseInt(lastPageLink.text()) : 1;
+      }
+
+      function getElementsFromPagedemandesUpload(pageNumber) {
+        var url = window.location.href + "&page=" + pageNumber;
+        var response = ferveX.ajax({
+          url: url,
+          type: "GET",
+          async: false,
+        }).responseText;
+
+        var doc = ferveX.parseHTML(response);
+        return ferveX(doc).find('.block-row[data-author="' + username + '"]');
+      }
+
+      ferveX("#demandesUploadUser").on("click", function (e) {
+        var lastPage = getLastPageNumberdemandesUpload();
+        var allElements = [];
+
+        for (var i = 1; i <= lastPage; i++) {
+          var elementsFromPage = getElementsFromPagedemandesUpload(i);
+          allElements = allElements.concat(Array.from(elementsFromPage));
+        }
+
+        var filteredElements = allElements.filter(function (element) {
+          return element.getAttribute("data-author") === username;
+        });
+
+        var resultList = ferveX(".block-body");
+        resultList.empty();
+        ferveX.each(filteredElements, function (_, element) {
+          resultList.append(element);
+        });
+
+        var pagination = ferveX(".pageNavWrapper");
+        if (pagination.length) {
+          pagination.remove();
         }
       });
 
@@ -1390,7 +1800,7 @@ ferveX(document).ready(function () {
           userDownOctet,
           userDelta;
         var urlSearch =
-          "https://www3.yggtorrent.wtf/engine/search_users?nickname=" +
+          "https://www3.yggtorrent.qa/engine/search_users?nickname=" +
           encodeURIComponent(userPseudo);
 
         // Requête pour charger le contenu HTML de la recherche user
@@ -1482,7 +1892,7 @@ ferveX(document).ready(function () {
             var userPseudo = match[1];
             var userProfil;
             var urlSearch =
-              "https://www3.yggtorrent.wtf/engine/search_users?nickname=" +
+              "https://www3.yggtorrent.qa/engine/search_users?nickname=" +
               encodeURIComponent(userPseudo);
 
             fetch(urlSearch)
@@ -1525,7 +1935,7 @@ ferveX(document).ready(function () {
         var userPseudo = ferveX(".memberHeader-name .username").text().trim();
         var userProfil;
         var urlSearch =
-          "https://www3.yggtorrent.wtf/engine/search_users?nickname=" +
+          "https://www3.yggtorrent.qa/engine/search_users?nickname=" +
           encodeURIComponent(userPseudo);
 
         fetch(urlSearch)
@@ -2403,7 +2813,7 @@ ferveX(document).ready(function () {
         }
 
         async function getTableData(pageNumber) {
-          let url = `https://www3.yggtorrent.wtf/user/my_torrents?page=${
+          let url = `https://www3.yggtorrent.qa/user/my_torrents?page=${
             pageNumber * 50
           }`;
           let response = await ferveX.ajax({ url });
@@ -2514,7 +2924,7 @@ ferveX(document).ready(function () {
               );
               if (conf) {
                 var t_id = $(this).closest("tr").attr("torrent-id");
-                $.post("https://www3.yggtorrent.wtf/user/remove_torrent", {
+                $.post("https://www3.yggtorrent.qa/user/remove_torrent", {
                   id: t_id,
                 })
                   .done(function (id) {
