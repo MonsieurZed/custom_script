@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         YGGTools+
 // @namespace    YGGTools
-// @version      0.011
+// @version      0.100
 // @description  Ajout d'améliorations pour le site YGG.
 // @author       Fervex
-// @supportURL   https://www3.yggtorrent.wtf/profile/7161-fervex
-// @updateURL    https://raw.githubusercontent.com/MonsieurZed/custom_script/main/ygg.js
-// @downloadURL  https://raw.githubusercontent.com/MonsieurZed/custom_script/main/ygg.js
+// @supportURL   https://www3.yggtorrent.qa/profile/7161-fervex
+// @updateURL    https://yggland.fr/userscripts/YGGTools.user.js
+// @downloadURL  https://yggland.fr/userscripts/YGGTools.user.js
 // @icon         https://yggland.fr/assets/img/ygg32.png
 // @include      https://*.yggtorrent.*
 // @include      https://yggtorrent.*
@@ -28,10 +28,9 @@ ferveX(document).ready(function () {
   var styleBoutonS =
     "margin:15px 8px 0; display:inline-block; border-radius:25px; padding:8px 15px; text-transform:uppercase; background:#885599; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
   var styleBoutonA =
-    "margin:15px 8px 0; display:inline-block; border-radius:25px; padding:8px 15px; text-transform:uppercase; background:#228B22; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
+    "margin:8px 4px 0; display:inline-block; border-radius:12px; padding:4px 8px; text-transform:uppercase; background:#228B22; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
   var styleBoutonD =
-    "margin:15px 8px 0; display:inline-block; border-radius:25px; padding:8px 15px; text-transform:uppercase; background:#AA8B33; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
-
+    "margin:8px 4px 0; display:inline-block; border-radius:12px; padding:4px 8px; text-transform:uppercase; background:#AA8B33; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
   ferveX("head link[rel='stylesheet']")
     .last()
     .after(
@@ -358,11 +357,6 @@ ferveX(document).ready(function () {
     "undefined" !== typeof window ? document : null
   );
 
-  /* favicon
-    $("link[href='https://www.yggtorrent.pe/favicon.ico']").attr("href","https://yggland.fr/assets/img/ygg32.png");
-    $("link[href='https://www.yggtorrent.li/favicon.ico']").attr("href","https://yggland.fr/assets/img/ygg32.png");
-    $("link[href='https://www.yggtorrent.fi/favicon.ico']").attr("href","https://yggland.fr/assets/img/ygg32.png"); */
-
   /* fonctions cookies */
   function setCookie(name, value, days) {
     var expires = "";
@@ -443,12 +437,6 @@ ferveX(document).ready(function () {
   var pageX;
   var pageY;
   var fervexTemp = "0";
-
-  var sidebar;
-  var preview;
-  var preview_delai;
-  var preview_height;
-  var preview2;
 
   /* Icone recherche dynamique */
   var iconeRecherche = "ico_search";
