@@ -2242,7 +2242,7 @@ ferveX(document).ready(function () {
           rechercheF +
           "&description=&file=&uploader=" +
           rechercheU +
-          "&category=2145&sub_category=2183&do=search&order=desc&sort=size";
+          "&category=2145&sub_category=2183&do=search&order=asc&sort=size";
       });
 
       ferveX("#recherche-filmD").click(function (e) {
@@ -2268,7 +2268,7 @@ ferveX(document).ready(function () {
           rechercheF +
           "&description=&file=&uploader=" +
           rechercheU +
-          "&category=2145&sub_category=2184&do=search&order=desc&sort=size";
+          "&category=2145&sub_category=2184&do=search&order=asc&sort=size";
       });
 
       ferveX("#recherche-seriesD").click(function (e) {
@@ -2294,7 +2294,7 @@ ferveX(document).ready(function () {
           rechercheF +
           "&description=&file=&uploader=" +
           rechercheU +
-          "&category=2145&sub_category=2178&do=search&order=desc&sort=size";
+          "&category=2145&sub_category=2178&do=search&order=asc&sort=size";
       });
 
       ferveX("#recherche-animeD").click(function (e) {
@@ -2320,7 +2320,7 @@ ferveX(document).ready(function () {
           rechercheF +
           "&description=&file=&uploader=" +
           rechercheU +
-          "&category=2145&sub_category=2179&do=search&order=desc&sort=size";
+          "&category=2145&sub_category=2179&do=search&order=asc&sort=size";
       });
 
       ferveX("#recherche-animeseriesD").click(function (e) {
