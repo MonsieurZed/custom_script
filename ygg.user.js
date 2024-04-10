@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         YGGTools+
 // @namespace    YGGTools
-// @version      0.101
+// @version      0.102
 // @description  Ajout d'améliorations pour le site YGG.
 // @author       Fervex
 // @supportURL   https://www3.yggtorrent.qa/profile/7161-fervex
-// @updateURL    https://yggland.fr/userscripts/YGGTools.user.js
-// @downloadURL  https://yggland.fr/userscripts/YGGTools.user.js
+// @updateURL    https://github.com/MonsieurZed/custom_script/raw/main/ygg.user.js
+// @downloadURL  https://github.com/MonsieurZed/custom_script/raw/main/ygg.user.js
 // @icon         https://yggland.fr/assets/img/ygg32.png
 // @include      https://*.yggtorrent.*
 // @include      https://yggtorrent.*
