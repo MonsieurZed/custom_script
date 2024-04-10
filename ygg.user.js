@@ -31,6 +31,9 @@ ferveX(document).ready(function () {
     "margin:15px 8px 0; display:inline-block; border-radius:25px; padding:8px 15px; text-transform:uppercase; background:#228B22; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
   var styleBoutonD =
     "margin:15px 8px 0; display:inline-block; border-radius:25px; padding:8px 15px; text-transform:uppercase; background:#AA8B33; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
+  var styleBoutonE =
+    "margin:15px 8px 0; display:inline-block; border-radius:25px; padding:8px 15px; text-transform:uppercase; background:#778BCC; color:#fff; font-size:13px; font-weight:700; transition:background 0.5s ease;";
+
   ferveX("head link[rel='stylesheet']")
     .last()
     .after(
@@ -2075,6 +2078,32 @@ ferveX(document).ready(function () {
       /* Boutons de recherche */
       ferveX(".search-criteria button.solo")
         .after(
+          ' <a href="" class="recherche-fervex" id="recherche-AudioD" style="' +
+            styleBoutonE +
+            '"><img src="https://nsE40.casimages.com/img/2021/01/02/210102062556828242.png" class="pr-1" style="padding-bottom: 2px;"> Audiobook (Date)</a>'
+        )
+        .after(
+          ' <a href="" class="recherche-fervex" id="recherche-LivreD" style="' +
+            styleBoutonE +
+            '"><img src="https://nsa40.casimages.com/img/2021/01/02/210102062556828242.png" class="pr-1" style="padding-bottom: 2px;"> Ebook (Date)</a>'
+        )
+        .after(
+          ' <a href="" class="recherche-fervex" id="recherche-ComicD"   style="' +
+            styleBoutonE +
+            '"><img src="https://nsa40.casimages.com/img/2021/01/02/210102062556828242.png" class="pr-1" style="padding-bottom: 2px;"> Comics (Date)</a>'
+        )
+        .after(
+          ' <a href="" class="recherche-fervex" id="recherche-MangaD"   style="' +
+            styleBoutonE +
+            '"><img src="https://nsa40.casimages.com/img/2021/01/02/210102062556828242.png" class="pr-1" style="padding-bottom: 2px;"> Manga (Date)</a>'
+        )
+        .after(
+          ' <a href="" class="recherche-fervex" id="recherche-BdD"   style="' +
+            styleBoutonE +
+            '"><img src="https://nsa40.casimages.com/img/2021/01/02/210102062556828242.png" class="pr-1" style="padding-bottom: 2px;"> BD (Date)</a>'
+        )
+        .after("<br/>")
+        .after(
           ' <a href="" class="recherche-fervex" id="recherche-SportD" style="' +
             styleBoutonA +
             '"><img src="https://nsa40.casimages.com/img/2021/01/02/210102062556828242.png" class="pr-1" style="padding-bottom: 2px;"> Sport (Date)</a>'
@@ -2388,6 +2417,70 @@ ferveX(document).ready(function () {
           "&category=2145&sub_category=2185&do=search&order=desc&sort=publish_date";
       });
 
+      ferveX("#recherche-AudioD").click(function (e) {
+        e.preventDefault();
+        rechercheF = ferveX(".search-criteria input[name='name']").val();
+        rechercheU = ferveX(".search-criteria input[name='uploader']").val();
+        window.location =
+          baseUrl +
+          "search?name=" +
+          rechercheF +
+          "&description=&file=&uploader=" +
+          rechercheU +
+          "&category=2140&sub_category=2151&do=search&order=desc&sort=publish_date";
+      });
+
+      ferveX("#recherche-LivreD").click(function (e) {
+        e.preventDefault();
+        rechercheF = ferveX(".search-criteria input[name='name']").val();
+        rechercheU = ferveX(".search-criteria input[name='uploader']").val();
+        window.location =
+          baseUrl +
+          "search?name=" +
+          rechercheF +
+          "&description=&file=&uploader=" +
+          rechercheU +
+          "&category=2140&sub_category=2154&do=search&order=desc&sort=publish_date";
+      });
+
+      ferveX("#recherche-MangaD").click(function (e) {
+        e.preventDefault();
+        rechercheF = ferveX(".search-criteria input[name='name']").val();
+        rechercheU = ferveX(".search-criteria input[name='uploader']").val();
+        window.location =
+          baseUrl +
+          "search?name=" +
+          rechercheF +
+          "&description=&file=&uploader=" +
+          rechercheU +
+          "&category=2140&sub_category=2155&do=search&order=desc&sort=publish_date";
+      });
+
+      ferveX("#recherche-ComicD").click(function (e) {
+        e.preventDefault();
+        rechercheF = ferveX(".search-criteria input[name='name']").val();
+        rechercheU = ferveX(".search-criteria input[name='uploader']").val();
+        window.location =
+          baseUrl +
+          "search?name=" +
+          rechercheF +
+          "&description=&file=&uploader=" +
+          rechercheU +
+          "&category=2140&sub_category=2153&do=search&order=desc&sort=publish_date";
+      });
+
+      ferveX("#recherche-BdD").click(function (e) {
+        e.preventDefault();
+        rechercheF = ferveX(".search-criteria input[name='name']").val();
+        rechercheU = ferveX(".search-criteria input[name='uploader']").val();
+        window.location =
+          baseUrl +
+          "search?name=" +
+          rechercheF +
+          "&description=&file=&uploader=" +
+          rechercheU +
+          "&category=2140&sub_category=2152&do=search&order=desc&sort=publish_date";
+      });
       /* bouton DL torrent */
       function gettorrent() {
         ferveX("a[id^=get_nfo]")
