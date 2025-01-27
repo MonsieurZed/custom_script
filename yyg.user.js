@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YGGTools+
 // @namespace    YGGTools
-// @version      0.116
+// @version      0.117
 // @description  Ajout d'améliorations pour le site YGG.
 // @author       Fervex
 // @supportURL   https://www3.yggtorrent.qa/profile/7161-fervex
@@ -2154,6 +2154,11 @@ ferveX(document).ready(function () {
         )
         .after("<br/>")
         .after(
+          ' <a href="" class="recherche-fervex" id="recherche-2025"   style="' +
+            styleBoutonD +
+            '"><img class="pr-1" style="padding-bottom: 2px;">2025 </a>'
+        )
+        .after(
           ' <a href="" class="recherche-fervex" id="recherche-2024"   style="' +
             styleBoutonD +
             '"><img class="pr-1" style="padding-bottom: 2px;">2024 </a>'
@@ -2244,6 +2249,15 @@ ferveX(document).ready(function () {
         window.location =
           baseUrl +
           "search?name=2024+&description=&file=&uploader=" +
+          rechercheU +
+          "&category=2145&sub_category=2183&do=search&order=desc&sort=publish_date";
+      });
+
+      ferveX("#recherche-2025").click(function (e) {
+        e.preventDefault();
+        window.location =
+          baseUrl +
+          "search?name=2025+&description=&file=&uploader=" +
           rechercheU +
           "&category=2145&sub_category=2183&do=search&order=desc&sort=publish_date";
       });
